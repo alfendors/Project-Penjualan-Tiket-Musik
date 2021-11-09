@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    tools:context=".ConcertActivity">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="716dp"
+        android:layout_marginTop="10dp"
+        android:padding="10dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="125dp"
+                android:layout_height="170dp"
+                android:background="#222020"
+                android:scaleType="centerCrop"
+                android:id="@+id/concertthumbnail"/>
+
+            <TextView
+                android:id="@+id/txtconcert"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Concert Music"
+                android:textColor="#9E9797"
+                android:layout_marginTop="10dp"
+                android:textStyle="bold"
+                android:textSize="20sp"/>
+
+            <TextView
+                android:id="@+id/txtcategory"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Category"
+                android:textColor="#615D5D"
+                android:background="#D8CFCF"
+                android:padding="8dp"
+                android:layout_marginTop="10dp"/>
+
+            <TextView
+                android:id="@+id/txtdescription"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#B5B0B0"
+                android:text="@string/description"
+                android:textStyle="bold"
+                android:textSize="18sp"
+                android:layout_marginTop="10dp"/>
+
+        </LinearLayout>
+
+
+
+    </androidx.core.widget.NestedScrollView>
+
+
+</LinearLayout>
